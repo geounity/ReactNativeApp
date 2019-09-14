@@ -1,5 +1,5 @@
 import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 // Screens
 import HomeScreen from './screens/Home'
@@ -8,7 +8,7 @@ import DebatesScreen from './screens/Debates'
 import AimsScreen from './screens/Aims'
 import CommunitiesScreen from './screens/Communities'
 
-const AppNavigator = createStackNavigator({
+const BottomNavigator = createBottomTabNavigator({
   Home: { screen: HomeScreen },
   Polls: { screen: PollsScreen },
   Debates: { screen: DebatesScreen },
@@ -20,4 +20,4 @@ const AppNavigator = createStackNavigator({
   headerMode: 'none'
 });
 
-export default createAppContainer(AppNavigator);
+export default createAppContainer(BottomNavigator);

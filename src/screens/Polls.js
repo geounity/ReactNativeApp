@@ -3,7 +3,6 @@ import { View, Text, StyleSheet } from 'react-native'
 import { Content } from 'native-base'
 
 import GuHeader from '../layout/header'
-import GuFooter from '../layout/footer'
 
 class Polls extends Component {
   render() {
@@ -12,7 +11,6 @@ class Polls extends Component {
         <View>
           <Text>Polls Screen</Text>
         </View>
-        <GuFooter navigation={this.props.navigation} />
       </Content>
     )
   }

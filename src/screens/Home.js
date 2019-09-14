@@ -4,7 +4,6 @@ import { Container, Content, Footer, FooterTab, Icon, Button, Accordion, H1, H2 
 import * as Font from "expo-font";
 
 import GuHeader from '../layout/header'
-import GuFooter from '../layout/footer'
 
 const dataArray = [
   { title: 'Crea encuestas', content: 'Las encuestas se componenen de preguntas. Hay varios tipos de preguntas. Defina las opciones de respuestas y decida la próxima pregunta en base a la respuesta anterior. Las encuestas son para una comunidad en específico.' },
@@ -60,7 +59,6 @@ class HomeScreen extends Component {
           contentStyle={styles.accordionContent}
           expanded={0}
         />
-        <GuFooter navigation={this.props.navigation} />
       </Content>
     );
   }
