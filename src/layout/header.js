@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet, Platform, SafeAreaView, StatusBar } from 'react-native'
+import { Text, Image, StyleSheet, Platform, SafeAreaView, StatusBar } from 'react-native'
 import { Header, Body, Title, Left, Right, Button } from 'native-base'
 
 function GuHeader(props) {
